@@ -9,7 +9,7 @@ import subprocess
 #please change this to valid author emails
 AUTHORS = ['?@bu.edu', '??@bu.edu', '???@bu.edu']
 
-PROGRAM_TO_TEST = "collision"
+PROGRAM_TO_TEST = "test_program.py"
 
 def runprogram(program, args, inputstr):
     coll_run = subprocess.run(
