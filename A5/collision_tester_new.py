@@ -26,22 +26,23 @@ def runprogram(program, args, inputstr):
 
 class CollisionTestCase(unittest.TestCase):
     "empty class - write this"
-    def test_one(self):
-        strin = "one 20 10 -2 1"
-        correct_out = "3\none 14 13 -2 1\n"
-        (rc,out,errs) = runprogram(PROGRAM_TO_TEST,["3"],strin)
-        self.assertEqual(rc,0)
-        self.assertEqual(out,correct_out)
-        self.assertEqual(errs,"")
-        
     def test_programname(self):
         self.assertTrue(PROGRAM_TO_TEST.endswith('.py'),"wrong program name")
 
 def main():
     "show how to use runprogram"
 
-    print(runprogram('./test_program.py', ["4", "56", "test"], "my input"))
+    print(runprogram('./collisions.py', ["4", "56", "test"], "my input"))
     unittest.main()
+    print('Run {} tests'.format(results.testsRun))
+
+    print('you passed {} tests'.format(tests_passed))
+    for test,output in results.failures:
+        print(">>",test)
+        print(">>",output)
+    for test,output in results.errors:
+        print(">>",test)
+        print(">>",output)
 
 if __name__ == '__main__':
     main()
