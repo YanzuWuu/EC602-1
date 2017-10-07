@@ -28,9 +28,9 @@ class CollisionTestCase(unittest.TestCase):
     "empty class - write this"
     def test_one(self):
         strin = "one 20 10 -2 1"
-        correct_out = "3\none 14 13 -2 1\n"
+        correct_out = "3\none 20 10 -2 1\n"
         (rc,out,errs) = runprogram(PROGRAM_TO_TEST,["3"],strin)
-        self.assertEqual(rc,0)
+        self.assertEqual(rc,2)
         self.assertEqual(out,correct_out)
         self.assertEqual(errs,"")
         
