@@ -16,7 +16,7 @@ import json
 
 import collision_tester
 
-SUPPRESS_OUTPUT = False
+SUPPRESS_OUTPUT = True
 
 
 def check_all_files():
