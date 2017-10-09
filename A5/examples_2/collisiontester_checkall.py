@@ -22,7 +22,7 @@ SUPPRESS_OUTPUT = False
 def check_all_files():
     passed, failed = [], []
 
-    Programs = glob.glob('examples_2/collisionc*')
+    Programs = glob.glob('collisionc*')
     for file_name in Programs:
 
         loader = unittest.loader.TestLoader()
