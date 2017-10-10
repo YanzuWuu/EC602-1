@@ -19,10 +19,8 @@ def runprogram(program, args, inputstr):
     program_output = coll_run.stdout.decode()
     return (ret_code, program_output)
 
-
 def time_float(out):
     return out.replace(".0000", "")
-
 
 class CollisionTestCase(unittest.TestCase):
 
