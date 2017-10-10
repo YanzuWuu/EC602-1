@@ -6,7 +6,7 @@ import unittest
 import subprocess
 import threading
 
-AUTHORS = ['shwang95@bu.edu','jason826@bu.edu','gyt@bu.edu']
+AUTHORS = ['shwang95@bu.edu', 'jason826@bu.edu', 'gyt@bu.edu']
 
 PROGRAM_TO_TEST = ""
 
@@ -14,13 +14,15 @@ def runprogram(program, args, inputstr):
     coll_run = subprocess.run(
         [program, *args],
         input=inputstr.encode(),
-        stdout=subprocess.PIPE, timeout = 0.1)
+        stdout=subprocess.PIPE, timeout=0.1)
     ret_code = coll_run.returncode
     program_output = coll_run.stdout.decode()
     return (ret_code, program_output)
 
+
 def time_float(out):
-    return out.replace(".0000","")
+    return out.replace(".0000", "")
+
 
 class CollisionTestCase(unittest.TestCase):
 
