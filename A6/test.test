@@ -1,0 +1,12 @@
+pone -15 0 1 0
+pfive -65 0 5 0
+pten -125 0 10 0
+none 15 0 -1 0
+nfive 65 0 -5 0
+nten 125 0 -10 0
+dpone -15 50 1 -4
+dpfive -65 50 5 -4
+dpten -125 50 10 -4
+dnone 15 50 -1 -4
+dnfive 65 50 -5 -4
+dnten 125 50 -10 -4
