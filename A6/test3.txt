@@ -1,5 +1,0 @@
-mover 0 0 0 1
-mover0 0 20 0 0
-mover1 0 40 0 0
-mover2 0 60 0 0
-mover3 0 80 0 0
