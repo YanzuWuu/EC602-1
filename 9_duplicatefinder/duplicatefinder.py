@@ -11,7 +11,6 @@ import numpy as np
 
 FILE_TO_WRITE = sys.argv[1]
 
-
 def sha256(filename):
     """Calculate SHA256"""
     file_read = open(filename, 'rb')
